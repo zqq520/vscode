@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城布局</title>
+</head>
+<link rel="stylesheet" href="../lib/bootstrap.min.css">
+<style>
+    body {
+        height: 1000px;
+        position: absolute;
+    }
+
+    div {
+        height: 100px;
+
+    }
+
+    #pos {
+        /* position: relative; */
+        /* float:inline-end; */
+        
+        bottom: 0;
+
+    }
+</style>
+
+<body>
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row" id="siz" style="background-color: crimson;">
+        <div class="col-xs-6 col-md-4">
+            <h3>潮流前线</h3>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h3>手机酷玩</h3>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h3>品质生活</h3>
+        </div>
+    </div>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+    <div class="row">
+        <div class="col-xs-6 col-md-4">
+            <h3>品牌精选新品 </h3>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h3>乐PRO三星 </h3>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h3>巨划算 买疯了</h3>
+        </div>
+    </div>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+        <div class="col-xs-4"><img src="../img copy/02.png" alt=""></div>
+        <div class="col-xs-4"><img src="../img copy/17.png" alt=""></div>
+        <div class="col-xs-4"><img src="../img copy/15.png" alt=""></div>
+    </div>
+<div class="row">
+</div>
+    <div class="row" id="pos" >
+        <div class="col-xs-12"><img src="../img copy/13.png" alt=""></div>
+    </div>
+    <video src="../medi/mi.mp4" width="1420px" autoplay="autoplay" muted="muted" controls="controls" loop="loop">
+    
+    </video>
+
+
+</body>
+
+</html>

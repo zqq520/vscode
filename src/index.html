@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+</head>
+<style>
+    ul {
+        margin: 100px auto;
+    }
+    h2{
+        text-align: center;
+        text-shadow: 2px,4px,2px,red;
+    }
+</style>
+
+<body>
+    <h2>周清泉 173080085</h2>
+    <ul>
+        <li><a href="01.html">1.1 标题</a></li>
+        <li><a href="02.html">1.2 列表</a></li>
+        <li><a href="03.html">1.3 img标签</a></li>
+        <li><a href="04.html">1.4 a标签</a></li>
+        <script>
+            document.addEventListener('contextmenu',function(e){
+                e.preventDefault();
+            })
+            document.addEventListener('selectstart', function (e) {
+                    e.preventDefault();
+                })
+            setTimeout(function(){
+                console.log('时间到了');
+            },3000)
+        </script>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周清泉 173080085</title>
+</head>
+<link rel="stylesheet" href="lib/bootstrap.min.css">
+<style>
+    body{
+        position: relative;
+        margin: 0 200px;
+    }
+    #juli {
+        border: 3px solid red;
+        padding: 20px 10px;
+    }
+
+    form {
+        position: relative;
+        
+
+    }
+
+    .ti {
+        position: fixed;
+        bottom: 0;
+        right: 200px;
+        width: 300px;
+        border: 3px solid #422605;
+    }
+</style>
+
+<body>
+    <form action="javaScript:;">
+        请假类型：
+        <select class="form-control" id="juli">
+            <option>事假</option>
+            <option>病假</option>
+            <option>放假</option>
+        </select>
+        <hr>
+        请假事由：
+        <textarea class="form-control" rows="5" id="juli"></textarea>
+        <input type="button" value="短信提示科室负责人">
+        <div class="form-group">
+            <label for="exampleInputEmail1">开始时间</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" value="2022.03.16">
+
+        </div>
+        <input type="button" value="08:00">
+        <input type="button" value="14:00">
+        <div class="form-group">
+            <label for="exampleInputEmail1">结束时间</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" value="2022.03.17">
+
+        </div>
+        <input type="button" value="15:00">
+        <input type="button" value="21:00">
+        <input type="file" name="" id="" value="添加附件">
+        <div class="ti">
+            <input type="submit" formaction="/demo/html/action_page_2.php" value="清空">
+            <input type="submit" value="提交">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
