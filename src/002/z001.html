@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>周清泉 173080085</title>
+  <link rel="stylesheet" href="../../lib/bootstrap.min.css">
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  <style>
+    .center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tupi {
+      height: 8000px;
+      background-image: url(../../img/fruit.jpeg);
+      background-size: contain;
+      background-repeat: no-repeat;
+
+
+    }
+
+    .bg {
+      text-align: center;
+      background-color: #fff;
+    }
+
+    #kj {
+      margin-top: 200px;
+    }
+
+    h1:hover {
+      color: #FF00FF;
+    }
+    .dx{
+      text-size-adjust: 30px;
+      width: 100px;
+      height: 50px;
+    }
+    .dx:hover{
+      background-color: rgb(237, 226, 21);
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- <div class=" tupi"> -->
+  <!-- <img src="../../img copy/fruit.jpeg" class="img-responsive" alt="Responsive image"> -->
+  <div class=" row tupi container-xxl ">
+    <div class="col-xs-12 col-md-4 col-md-offset-4  " id="kj">
+      <h1 class="bg">周清泉 的作业</h1>
+      <div class="col-xs-12 col-md-4 col-md-offset-4">
+       
+        <button type="button" class="btn btn-warning dx " data-bs-toggle="popover" title="类型" data-bs-content="zqq"  onclick="myFunction()">请输入信息</button>
+      </div>
+
+    </div>
+  </div>
+  <!-- 
+  </div> -->
+
+  <!-- </div> -->
+
+<script>
+  function myFunction() {
+    var txt;
+    var person = prompt("请输入您的名字：", "周清泉 173080085");
+    if (person == null || person == "") {
+      txt = "用户取消输入";
+    } else {
+      txt = "你好，" + person + "！今天过得好吗？";
+    }
+    document.getElementById("demo").innerHTML = txt;
+  }
+</script>
+</body>
+
+</html>
